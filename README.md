@@ -1,2 +1,2 @@
 # FindPareGame
-A simple card game in JS. :)
+A simple card game on JS. :)
