@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найди пару</title>
+</head>
+<body >
+    <div class="wrapper" id="wrapper">
+
+        <h1 class = "headers" >Pick two cards!</h1>
+        <h2 class = "headers">Select your difficulty:</h2>
+        <h3 class = "timer>">60</h3>
+
+        <div class="selectdif"> 
+            <div class='radio-button'>
+                <input  type="radio" name="difficulty" value="Easy" id="option-1">
+                <label for="option-1">Easy</label>    
+            </div>
+            <div class='radio-button'>
+                <input  type="radio" name="difficulty" value="Medium" id="option-2" checked>
+                <label for="option-2">Medium</label>    
+            </div>
+            <div class='radio-button'>
+                <input  type="radio" name="difficulty" value="Hard" id="option-3" >
+                <label for="option-3">Hard</label>    
+            </div>
+        </div>
+
+        <button class="start" onclick=startButton() id="startbutt" type="submit">Begin!</button>
+        <button class = "return" onclick=returnButton() id="returnbutt">Return</button>
+
+
+        <ul class="cards" id="cards">
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"> </div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+            <li class="card">
+                <div class="frontpage"> </div>
+                <div class="back"></div>
+            </li>
+        </ul>
+
+        <div class="winning">
+            <div class="winning-label">
+                <p class="congrats">YOU WON!</p>
+                <img src="img/winning.png" class="winpic" alt="">
+                <button class="refresh-game" id="refresh-game" onclick=restartGame()>Restart</button>
+            </div>
+        </div>
+
+        <div class="loosing">
+            <div class="loosing-label">
+                <p class="congrats">YOU LOSE!</p>
+                <img src="img/lose.png" class="loosepic" alt="">
+                <button class="lose-refresh-game" id="refresh-game" onclick=restartGame()>Restart</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="script.js"></script>
+</html>
